@@ -1,5 +1,3 @@
-'use client'
- 
 import Link from "next/link";
 import clsx from 'clsx';
 import NavLink from './NavLink';
@@ -14,7 +12,7 @@ export default function Navbar() {
                 <ul className="flex gap-10 items-center mx-auto"> 
                 <div className="flex-shrink-0">
                         <Image
-                        src="/HeaderLogo.png"
+                        src="/HeaderLogoNoise.png"
                         width={1640}
                         height={400}
                         className="object-contain max-w-55 max-h-55 -my-4"
