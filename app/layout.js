@@ -9,7 +9,8 @@ export default function RootLayout({ children }) {
       <body className="site bg-orange-400"> 
         <Navbar />
           <main className="main">
-            <ContentWrapper children={children} >
+            <ContentWrapper>
+              {children}
             
             </ContentWrapper>
           </main>
