@@ -15,7 +15,7 @@ export default function Footer(){
                         <a href="/Contact"><Mail/></a>
                     </ul>
                 </div>
-                <p>&copy; {new Date().getFullYear()} Pace 'N' Progress. All rights reserved</p> 
+                <p>&copy; {new Date().getFullYear()} Pace &apos;N&apos; Progress. All rights reserved</p> 
             </footer>
         </div>
     )
