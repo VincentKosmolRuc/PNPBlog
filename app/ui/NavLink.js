@@ -10,7 +10,7 @@ const currentPath = usePathname()
 
     return(
         <Link href={path} className={clsx(
-            currentPath === path? " text-orange-600 font-bold bg-zinc-950" : "hover:bg-zinc-600 text-slate-300 hover:text-slate-50",         
+            currentPath === path? " text-orange-400 font-bold bg-zinc-950" : "hover:bg-zinc-600 text-slate-300 hover:text-slate-50",         
             "py-2 px-6 rounded-lg"
         )}>
             {title}

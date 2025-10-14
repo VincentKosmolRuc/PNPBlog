@@ -2,15 +2,38 @@
 
 .site{
     display: flex;
-    min-height: 100vh;
+    min-height: 83vh;
     flex-direction: column;
 }
 .main{
     flex: 1;
 }
-/* 
-body {
-    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='noise'><feTurbulence baseFrequency='0.9' stitchTiles='stitch' /></filter><rect width='100%' height='100%' filter='url(#noise)'/></svg>");
-    opacity: 1;
-} 
-*/
+/* body{
+background: rgba(234, 0, 0, 234); 
+background-image: url("data:image/svg+xml,%3C!-- svg: first layer --%3E%3Csvg viewBox='0 0 250 250' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='3.65' numOctaves='6' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+background-size: cover; 
+} */
+ 
+body{  
+    background-image: url(/noise.png);
+    background-size: auto;
+}
+
+.bg{
+    background-color: whitesmoke;
+    background-image: url(/lightNoise.png); 
+}
+
+
+
+/* body{
+background: linear-gradient(to bottom, blue, transparent),
+url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"><filter id="backgroundNoise"><feTurbulence baseFrequency="5" numOctaves="8" stitchTiles="stitch" type="fractalNoise"/></filter><rect width="100%" height="100%" filter="url(%23backgroundNoise)"/></svg>') no-repeat center center;
+background-size: cover;
+} */
+/* .sides{
+background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"><filter id="contentNoise"><feTurbulence baseFrequency="5" numOctaves="8" stitchTiles="stitch" type="fractalNoise"/></filter><rect width="100%" height="100%" filter="url(%23contentNoise)"/></svg>') no-repeat center center;
+background-size: cover;
+min-height: 100%;
+} */
+

@@ -2,14 +2,14 @@ import Image from "next/image"
 
 export default function Page(){
     return(
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center"> 
-            <div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 m-6 items-center"> 
+            <div className="flex justify-center">
                 <Image 
                     src="/VincentKosmolDesktop.jpg"
                     width={2800}
                     height={5000}
-                    alt="Picture of Vincent Kosmol in ultra running outfit"
-                    className="mt-8 rounded-4xl shadow-2xl hidden sm:block"
+                    alt="Picture of Vincent Kosmol in ultra running outfit" 
+                    className="rounded-4xl shadow-2xl hidden sm:block max-w-sm"
                 />
                 <Image 
                     src="/VincentKosmolMobil.jpg"
@@ -51,14 +51,16 @@ export default function Page(){
                     className="block shadow-2xl sm:hidden"
                 />
             </div>
-            <div>
+            <div className="flex justify-center">
                 <Image 
                     src="/VincentKosmol2Desktop.jpg"
                     width={2800}
                     height={5000}
                     alt="Picture of Vincent Kosmol in ultra running outfit"
-                    className="mb-8 shadow-2xl rounded-4xl hidden sm:block"
+                    className="rounded-4xl shadow-2xl hidden sm:block w-full h-auto object-cover max-w-sm"
                 /> 
+            </div>
+            <div className="-mt-6 sm:-mt-0">
                 <h2 className="font-extrabold text-gray-700 block sm:hidden">Meaning</h2>
                 <p className="text-sm text-gray-700 mb-6 block sm:hidden">
                     The purpose of this blog is to document my different ultra runs, challenging 

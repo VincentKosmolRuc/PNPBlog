@@ -1,6 +1,6 @@
 import Link from "next/link";
 import clsx from 'clsx';
-import NavLink from './NavLink';
+import NavLink from "./NavLink";
 import Image from "next/image";
 
 export default function Navbar() {

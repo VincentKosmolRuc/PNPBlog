@@ -12,8 +12,9 @@ export default function Page() {
                     className="w-3xl md:mt-10 shadow-2xl md:rounded-4xl rounded-none"
                 />
             </div>
-            <div className="text-gray-700 mt-10 text-center px-4"> 
-                <p className="mb-4">
+            <div className="text-gray-700 mt-6 text-center px-4"> 
+                <h2 className="font-extrabold text-xl text-gray-700">Contact</h2>
+                <p className="mt-2">
                     Have a question about ultra running or one of my race reports?  
                     Want to work together?
                 </p>
