@@ -5,8 +5,8 @@ import Image from "next/image";
 
 export default function Navbar() {
     return(
-        <div className="bg-zinc-800">
-            <div className="flex items-center justify-between p-3"> 
+        <div className="bg-zinc-800 ">
+            <div className="flex items-center justify-between p-3 hidden sm:block"> 
                 
 
                 <ul className="flex gap-10 items-center mx-auto"> 
@@ -44,7 +44,8 @@ export default function Navbar() {
                 </div>
                 </ul> 
             </div>
-            
+            <p className="sm:hidden">very great navbar</p>
         </div>
+        
     )
 }
