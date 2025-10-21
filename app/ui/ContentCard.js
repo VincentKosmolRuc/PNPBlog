@@ -16,15 +16,15 @@ export default function ContentCard({ cont }) {
 
         case 'Image':
             return( 
-            <div className="rounded-lg overflow-hidden shadow-sm items-center">
+            <figure className="rounded-lg overflow-hidden shadow-sm items-center">
                 <Image
                 src={`/${cont.content}`}
                 width={1920}
                 height={1080} 
-                alt={cont.image_description != null ? (cont.image_description) : ("image description unavailable")}
+                alt={cont.image_description || "image description unavailable"}
                 />
-                <p>{cont.image_description}</p>
-            </div>
+                <figcaption>{cont.image_description}</figcaption>
+            </figure>
         );
 
         default:
