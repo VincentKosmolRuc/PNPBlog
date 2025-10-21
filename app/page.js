@@ -1,5 +1,6 @@
 import Image from "next/image";
 import NavLink from "./ui/NavLink";
+import Link from "next/link";
 import Button from "./ui/Button";
 import { getDb } from "@/app/lib/db";
 import PostCard from "@/app/ui/PostCard";
@@ -22,7 +23,11 @@ export default function Page() {
              {posts.length === 0 ? (
                <p>No posts yet.</p>
              ) : (
-                 posts.map((post) => <PostCard key={post.id} post={post} />)
+                 posts.map((post) => 
+            <Link key ={post.id} href={`/blog/${post.id}`}>
+              <PostCard key={post.id} post={post} />
+            </Link>
+            )
              )}
          </div>
 

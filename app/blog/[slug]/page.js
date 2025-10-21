@@ -6,7 +6,7 @@ import ContentCard from "@/app/ui/ContentCard";
 
 
 export default async function BlogPostPage({ params }) {
-  const { slug } = await params;
+  const { slug } = params;
   const db = await getDb();
 
   const content = await db.all(
@@ -31,7 +31,9 @@ export default async function BlogPostPage({ params }) {
   return (
   <div className="max-w-3xl mx-auto p-6 space-y-2">
     {posts.map(post=> (
-        <h1 key={post.id} className="font-extrabold font text-gray-700">{post.title}</h1>
+        
+            <h1 key={post.id} className="font-extrabold text-center text-4xl text-gray-700">{post.title}</h1>
+        
         ))}
     
     {content.map((cont) => (
