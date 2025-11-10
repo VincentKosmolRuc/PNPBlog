@@ -56,6 +56,8 @@ CREATE TABLE content (
 - Deployed on Vercel
 
 # To Do
+- Finishing touches on website responsiveness
+- Finetuning sql schema, inclution of tags, sequence_number, links
 - Build CMS interface for creating posts
 
 

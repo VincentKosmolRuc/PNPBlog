@@ -21,7 +21,7 @@ export default function ContentCard({ cont }) {
                 src={`/${cont.content}`}
                 width={1920}
                 height={1080} 
-                alt={cont.image_description || "image description unavailable"}
+                alt={cont.image_alt || "image description unavailable"}
                 />
                 <figcaption>{cont.image_description}</figcaption>
             </figure>
