@@ -11,11 +11,11 @@ export default async function BlogPostPage({ params }) {
 
   const content = await db.all(
     "SELECT * FROM content WHERE post_id = ? ORDER BY id ASC",
-    slug
+    `%${slug}%`
   );
   const posts = await db.all(
     "SELECT * FROM posts WHERE id = ?",
-    slug
+    `%${slug}%`
   )
 
   if (!content || content.length === 0) 
@@ -33,7 +33,7 @@ export default async function BlogPostPage({ params }) {
 
 
   return (
-  <div className="max-w-3xl mx-auto p-6 space-y-2">
+  <div className="max-w-4xl mx-auto p-6 space-y-2">
     {posts.map(post=> (
         <div key={post.id}>
             <h1  className="font-extrabold text-center text-4xl text-gray-700">{post.title}</h1>
@@ -42,7 +42,7 @@ export default async function BlogPostPage({ params }) {
                     width={1920}
                     height={1080}
                     alt={post.title}
-                    className="aspect-[16/9] object-cover w-full"
+                    className="aspect-[16/9] object-cover w-full pt-4 pb-4"
             />
         </div>
         ))}

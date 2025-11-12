@@ -6,24 +6,24 @@ export default function ContentCard({ cont }) {
 
         case 'Headline':
             return(
-            <h1 className="font-extrabold text-gray-700">{cont.content}</h1>
+            <h1 className="pt-1 font-extrabold text-gray-700">{cont.content}</h1>
         );
 
         case 'Text':
             return(
-            <p>{cont.content}</p>
+            <p className="">{cont.content}</p>
         );
 
         case 'Image':
             return( 
-            <figure className="rounded-lg overflow-hidden shadow-sm items-center">
+            <figure className="overflow-hidden shadow-sm items-center mt-6 mb-6">
                 <Image
                 src={`/${cont.content}`}
-                width={1920}
-                height={1080} 
-                alt={cont.image_alt || "image description unavailable"}
+                width={960}
+                height={540} 
+                alt={cont.image_alt || "image description unavailable"} 
                 />
-                <figcaption>{cont.image_description}</figcaption>
+                <figcaption className="bg-stone-300 p-2">{cont.image_description}</figcaption>
             </figure>
         );
 
@@ -32,35 +32,5 @@ export default function ContentCard({ cont }) {
     }
     
    
-
-
-    // if(cont){
-    //     if(cont.type === 'Headline'){
-    //     return(
-    //         <h1 className="font-extrabold text-gray-700">{cont.content}</h1>
-    //     );
-    // }
-    // else if(cont.type === 'Text'){
-    //     return(
-    //         <p>{cont.content}</p>
-    //     );
-    // }
-    // else if(cont.type ==='Image'){ 
-    //     return( 
-    //         <div className="rounded-lg overflow-hidden shadow-sm items-center">
-    //             <Image
-    //             src={`/${cont.content}`}
-    //             width={1920}
-    //             height={1080} 
-    //             alt={cont.image_description != null ? (cont.image_description) : ("image description unavailable")}
-    //             />
-    //             <p>{cont.image_description}</p>
-    //         </div>
-    //     );
-    // }
-    // }
-    // else {
-    //     return null;
-    // }
 }
 
