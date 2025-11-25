@@ -23,7 +23,7 @@ export default function ContentCard({ cont }) {
                 height={540} 
                 alt={cont.image_alt || "image description unavailable"} 
                 />
-                <figcaption className="bg-stone-300 p-2">{cont.image_description}</figcaption>
+                <figcaption className="bg-stone-950 text-white p-2">{cont.image_description}</figcaption>
             </figure>
         );
 

@@ -74,3 +74,8 @@ export default function HamburgerMenu() {
     </div>
   );
 }
+
+
+
+// Big credit to this blog post for the tutorial on creating a burger menu:
+// https://jacobhocker.medium.com/creating-an-animated-hamburger-menu-in-nextjs-tailwind-css-9e332d428811 
